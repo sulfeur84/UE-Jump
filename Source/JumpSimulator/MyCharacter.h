@@ -10,6 +10,8 @@ UCLASS()
 class JUMPSIMULATOR_API AMyCharacter : public ACharacter
 {
 	GENERATED_BODY()
+		UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Audio, meta = (AllowPrivateAccess = "true"))
+		class USoundCue* JumpSoundCue;
 
 public:
 	// Sets default values for this character's properties

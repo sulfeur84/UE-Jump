@@ -10,6 +10,12 @@ AMyCharacter::AMyCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// load jump obj
+	//static ConstructorHelpers::FObjectFinder<USoundCue> JumpSoundCueObject(TEXT("SoundCue'/Game/Jumping.Jumping'"));
+	//if (JumpSoundCueObject.Succeeded()) 
+	// {
+	//	JumpSoundCue = JumpSoundCueObject.Object;
+	//}
 }
 
 // Called when the game starts or when spawned
